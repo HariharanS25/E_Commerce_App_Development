@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/majorbg"
+    tools:context=".LoginActivity">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="158dp"
+        android:layout_height="91dp"
+        android:layout_marginStart="112dp"
+        android:layout_marginTop="191dp"
+        android:fontFamily="sans-serif-smallcaps"
+        android:text="Login"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:textSize="60sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/Username1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="90dp"
+        android:layout_marginBottom="17dp"
+        android:ems="10"
+        android:hint="Email id"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toTopOf="@+id/Password1"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/Password1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="91dp"
+        android:layout_marginBottom="33dp"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        app:layout_constraintBottom_toTopOf="@+id/login2"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/login2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="135dp"
+        android:layout_marginBottom="263dp"
+        android:backgroundTint="#FFFFFF"
+        android:fontFamily="sans-serif"
+        android:text="Login"
+        android:textColor="#00BCD4"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView10"
+        android:layout_width="94dp"
+        android:layout_height="94dp"
+        android:layout_marginTop="124dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.457"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/login2"
+        app:srcCompat="?android:attr/fingerprintAuthDrawable" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
